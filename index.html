@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Saya</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/x-icon" href="/img/icons8-profile-96.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="font-sans">
+
+<header class="relative text-black overflow-hidden pb-20">
+
+  <!-- Background blob -->
+  <img src="img/bg.svg" alt="Background" class="absolute top-0 right-0 w-3/4 md:w-2/3 lg:w-1/2 h-auto opacity-80 pointer-events-none z-0">
+
+  <!-- Navbar -->
+  <nav class="relative z-10 w-full mt-4">
+    <div class="max-w-7xl mx-auto px-6 md:px-10 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-black">Portofolio</div>
+
+        <!-- Menu Desktop -->
+        <div class="space-x-6 hidden md:flex items-center">
+          <a href="" class="text-black hover:text-blue-600">Home</a>
+          <a href="#about" class="text-black hover:text-blue-600">About</a>
+          <a href="#projects" class="text-black hover:text-blue-600">Projects</a>
+          <a href="#contact" class="text-white bg-[#17B8A6] hover:bg-[#139e90] px-4 py-1.5 rounded-lg shadow-md">
+            Contact
+          </a>
+        </div>
+
+        <!-- Hamburger Menu -->
+        <div class="md:hidden">
+          <button id="menu-btn" class="focus:outline-none">
+            <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+    </div>
+  </nav>
+
+  <!-- Sidebar Mobile Menu -->
+  <div id="mobile-menu" class="fixed inset-0 bg-black bg-opacity-50 hidden z-30">
+    <div class="w-64 bg-white h-full p-6 shadow-lg flex flex-col space-y-6">
+      <div class="flex justify-between items-center mb-4">
+        <span class="text-2xl font-bold text-black">Menu</span>
+        <button id="close-btn" class="focus:outline-none">
+          <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+      <a href="" class="text-black hover:text-blue-600">Home</a>
+      <a href="#about" class="text-black hover:text-blue-600">About</a>
+      <a href="#projects" class="text-black hover:text-blue-600">Projects</a>
+      <a href="#contact" class="text-white bg-[#17B8A6] hover:bg-[#139e90] px-4 py-2 rounded-lg shadow-md w-fit">Contact</a>
+    </div>
+  </div>
+
+  <!-- Isi Konten -->
+  <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center pt-1">
+
+    <!-- Kolom Kiri (Teks) -->
+    <div class="text-left space-y-6">
+      <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">
+        Hi, Guys!
+      </h1>
+      <h2 class="text-2xl md:text-5xl font-semibold text-[#17B8A6]">
+        Welcome to my profile
+      </h2>
+      <p class="text-lg md:text-xl text-gray-700 max-w-xl">
+        Saya siap membantu mewujudkan ide kreatif menjadi website yang keren & responsif.
+      </p>
+      <div class="space-x-4">
+        <a href="#projects" class="inline-block bg-[#17B8A6] hover:bg-[#139e90] text-white py-3 px-6 rounded-xl shadow-lg">
+          Lihat Karya Saya
+        </a>
+      </div>
+    </div>
+
+    <!-- Kolom Kanan (Gambar) -->
+    <div class="flex justify-center md:justify-end hidden md:flex">
+      <img src="img/undraw_tabs_tlxz.svg" alt="Gambar Profil" class="max-w-xs md:max-w-sm lg:max-w-md">
+    </div>
+
+  </div>
+
+</header>
+
+<h1 class="text-4xl md:text-5xl font-bold text-center text-[#17B8A6]" id="about">
+  About <span class="text-black">Me</span>
+  <span class="block h-1 bg-[#17B8A6] w-24 mx-auto mt-2"></span>
+</h1>
+<p class="text-center text-gray-600 mt-4 max-w-2xl mx-auto">
+  Perkenalan singkat mengenai diri saya dan beberapa keahlian yang saya miliki di bidang pengembangan web.
+</p>
+
+<!-- Bagian Profile -->
+<div class="relative z-10 max-w-7xl mx-auto px-6 md:px-10 flex flex-col md:flex-row items-center pt-10 mb-12">
+  
+  <!-- Gambar -->
+  <div class="flex-shrink-0 flex justify-center md:justify-start">
+    <div class="w-64 h-64 rounded-full border-8 border-[#17B8A6] flex items-center justify-center shadow-lg">
+      <img src="img/foto_profile.jpeg" alt="Foto Profil" 
+           class="w-56 h-56 object-cover rounded-full">
+    </div>
+  </div>
+
+  <!-- Deskripsi -->
+  <div class="ml-10 mt-6 md:mt-0">
+    <h2 class="text-3xl md:text-4xl font-bold">I'm <span class="text-[#17B8A6]">Geofanny Alfareza Pratama</span></h2>
+    <p class="text-lg text-gray-700 mt-2">
+      Saya adalah seorang Mahasiswa Aktif yang memiliki ketertarikan besar dalam dunia pengembangan web. 
+      Dengan semangat belajar dan pengalaman yang saya miliki, saya siap berkontribusi dalam mengembangkan website yang tidak hanya menarik secara tampilan, tetapi juga berfungsi dengan baik dan sesuai dengan kebutuhan pengguna.
+    </p>
+    
+    <!-- Icon Sosial Media -->
+    <div class="flex space-x-4 mt-4">
+      <a href="mailto:geofannyalfarezapratama@email.com" 
+        class="text-[#17B8A6] hover:text-[#139e90] text-2xl border border-[#17B8A6] w-12 h-12 rounded-full flex justify-center items-center transition">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/geofannyalfarezapratama/" target="_blank" 
+        class="text-[#17B8A6] hover:text-[#139e90] text-2xl border border-[#17B8A6] w-12 h-12 rounded-full flex justify-center items-center transition">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/Geofanny" target="_blank" 
+        class="text-[#17B8A6] hover:text-[#139e90] text-2xl border border-[#17B8A6] w-12 h-12 rounded-full flex justify-center items-center transition">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+
+    <!-- Card Skill -->
+    <div class="flex flex-wrap gap-3 mt-6">
+
+      <div class="w-36 h-16 bg-white border border-gray-200 rounded-xl shadow flex items-center justify-center p-2 gap-2">
+        <img src="img/laravel.svg" alt="Laravel" class="w-8 h-8">
+        <p class="text-sm font-medium">Laravel</p>
+      </div>
+    
+      <div class="w-36 h-16 bg-white border border-gray-200 rounded-xl shadow flex items-center justify-center p-2 gap-2">
+        <img src="img/bootstrap.svg" alt="Bootstrap" class="w-8 h-8">
+        <p class="text-sm font-medium">Bootstrap</p>
+      </div>
+    
+      <div class="w-36 h-16 bg-white border border-gray-200 rounded-xl shadow flex items-center justify-center p-2 gap-2">
+        <img src="img/tailwindcss.svg" alt="Tailwind" class="w-8 h-8">
+        <p class="text-sm font-medium">Tailwind</p>
+      </div>
+    
+      <div class="w-36 h-16 bg-white border border-gray-200 rounded-xl shadow flex items-center justify-center p-2 gap-2">
+        <img src="img/javascript.svg" alt="JavaScript" class="w-8 h-8">
+        <p class="text-sm font-medium">JavaScript</p>
+      </div>
+    
+      <div class="w-36 h-16 bg-white border border-gray-200 rounded-xl shadow flex items-center justify-center p-2 gap-2">
+        <img src="img/php.svg" alt="PHP" class="w-8 h-8">
+        <p class="text-sm font-medium">PHP</p>
+      </div>
+    
+      <div class="w-36 h-16 bg-white border border-gray-200 rounded-xl shadow flex items-center justify-center p-2 gap-2">
+        <img src="img/mysql.svg" alt="MySQL" class="w-8 h-8">
+        <p class="text-sm font-medium">MySQL</p>
+      </div>
+    
+      <div class="w-36 h-16 bg-white border border-gray-200 rounded-xl shadow flex items-center justify-center p-2 gap-2">
+        <img src="img/figma.svg" alt="Figma" class="w-8 h-8">
+        <p class="text-sm font-medium">Figma</p>
+      </div>
+    
+    </div>
+
+  </div>
+
+</div>
+
+<h1 class="text-4xl md:text-5xl font-bold text-center text-[#17B8A6]" id="projects">
+  Projects <span class="text-black">Me</span>
+  <span class="block h-1 bg-[#17B8A6] w-40 mx-auto mt-2"></span>
+</h1>
+<p class="text-center text-gray-600 mt-4 max-w-2xl mx-auto">
+  Beberapa project yang pernah saya kerjakan sebagai hasil dari proses belajar dan eksplorasi di bidang web development.
+</p>
+
+
+<!-- Card Project -->
+<div class="max-w-7xl mx-auto px-6 md:px-10 mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-12">
+
+  <!-- Card 1 -->
+  <a href="projects/skriva.html" class="relative group w-full h-48 rounded-xl overflow-hidden shadow-lg block">
+    <img src="img/img-project-1.png" alt="Website Portofolio" class="w-full h-full object-cover">
+    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+      <h3 class="text-white text-center text-lg font-semibold px-4">Website Skriva (Skripsi Virtual Assistant) Untuk Pengajuan Bimbingan Mahasiswa</h3>
+    </div>
+  </a>
+
+  <!-- Card 2 -->
+  <a href="projects/sikarta.html" class="relative group w-full h-48 rounded-xl overflow-hidden shadow-lg block">
+    <img src="img/img-project-2.png" alt="Landing Page Produk" class="w-full h-full object-cover">
+    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+      <h3 class="text-white text-center text-lg font-semibold px-4">UI/UX Sistem Informasi Karang Taruna (SIKARTA)</h3>
+    </div>
+  </a>
+
+  <!-- Card 3 -->
+  <a href="projects/librasmart.html" class="relative group w-full h-48 rounded-xl overflow-hidden shadow-lg block">
+    <img src="img/Img-project-3.PNG" alt="Sistem Informasi Kampus" class="w-full h-full object-cover">
+    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+      <h3 class="text-white text-center text-lg font-semibold px-4">UI/UX Landing Page LibraSmart</h3>
+    </div>
+  </a>
+
+  <!-- Card 4 -->
+  <a href="projects/pemesananPaketWisata.html" class="relative group w-full h-48 rounded-xl overflow-hidden shadow-lg block">
+    <img src="img/img-project-4.PNG" alt="Website Portofolio" class="w-full h-full object-cover">
+    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+      <h3 class="text-white text-center text-lg font-semibold px-4">Website Pemesanan Paket Wisata Taman Safari Bogor Sederhana</h3>
+    </div>
+  </a>
+  
+  <!-- Card 5 -->
+  <a href="projects/pendataanSiswa.html" class="relative group w-full h-48 rounded-xl overflow-hidden shadow-lg block">
+    <img src="img/img-project-5.png" alt="Landing Page Produk" class="w-full h-full object-cover">
+    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+      <h3 class="text-white text-center text-lg font-semibold px-4">Website Sistem Informasi Pendataan Siswa-Siswi Sekolah</h3>
+    </div>
+  </a>
+  
+  <!-- Card 6 -->
+  <a href="projects/ecommerce.html" class="relative group w-full h-48 rounded-xl overflow-hidden shadow-lg block">
+    <img src="img/img-project-6.PNG" alt="Sistem Informasi Kampus" class="w-full h-full object-cover">
+    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+      <h3 class="text-white text-center text-lg font-semibold px-4">Website E-commerce Sederhana</h3>
+    </div>
+  </a>
+
+</div>
+
+<!-- Contact -->
+<h1 class="text-4xl md:text-5xl font-bold text-center text-[#17B8A6]" id="contact">
+  Contact <span class="text-black">Me</span>
+  <span class="block h-1 bg-[#17B8A6] w-40 mx-auto mt-2"></span>
+</h1>
+<p class="text-center text-gray-600 mt-4 max-w-2xl mx-auto">
+  Hubungi saya jika memiliki pertanyaan atau ingin bekerja sama dalam pembuatan website.
+</p>
+
+
+<div class="max-w-7xl mx-auto px-6 md:px-10 mt-10 mb-20 grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+
+  <!-- Kiri: Alamat & Kontak -->
+  <div class="md:col-span-5 space-y-6">
+    <h2 class="text-3xl font-bold text-[#17B8A6] mb-4">Alamat Saya</h2>
+
+    <div class="flex items-start gap-4">
+      <i class="fas fa-map-marker-alt text-2xl text-[#17B8A6]"></i>
+      <p class="text-lg text-gray-700">
+        Jl. Bhakti Abri, Kota Depok, Jawa Barat, Indonesia
+      </p>
+    </div>
+
+    <div class="flex items-start gap-4">
+      <i class="fas fa-envelope text-2xl text-[#17B8A6]"></i>
+      <p class="text-lg text-gray-700">geofannyalfarezapratama@email.com</p>
+    </div>
+
+    <div class="flex items-start gap-4">
+      <i class="fas fa-phone text-2xl text-[#17B8A6]"></i>
+      <p class="text-lg text-gray-700">+62 813 1498 8146</p>
+    </div>
+  </div>
+
+  <!-- Kanan: Form Contact (Lebih Lebar) -->
+  <div class="md:col-span-7">
+    <form action="#" method="POST" class="rounded-2xl space-y-6">
+
+      <h2 class="text-3xl font-bold text-[#17B8A6] mb-4">Kirim Pesan</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Nama -->
+        <div class="relative">
+          <input type="text" id="name" name="name" required 
+                 class="peer w-full px-4 pt-6 pb-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#17B8A6] placeholder-transparent">
+          <label for="name" 
+                 class="absolute left-4 top-2 text-gray-500 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-sm peer-focus:text-[#17B8A6]">
+            Nama
+          </label>
+        </div>
+
+        <!-- Email -->
+        <div class="relative">
+          <input type="email" id="email" name="email" required 
+                 class="peer w-full px-4 pt-6 pb-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#17B8A6] placeholder-transparent">
+          <label for="email" 
+                 class="absolute left-4 top-2 text-gray-500 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-sm peer-focus:text-[#17B8A6]">
+            Email
+          </label>
+        </div>
+      </div>
+
+      <!-- Pesan Full Width -->
+      <div class="relative">
+        <textarea id="message" name="message" rows="4" required 
+                  class="peer w-full px-4 pt-6 pb-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#17B8A6] placeholder-transparent"></textarea>
+        <label for="message" 
+               class="absolute left-4 top-2 text-gray-500 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-sm peer-focus:text-[#17B8A6]">
+          Pesan
+        </label>
+      </div>
+
+      <div class="flex">
+        <button type="submit" 
+                class="bg-[#17B8A6] hover:bg-[#139e90] text-white font-medium px-8 py-3 rounded-lg shadow-md transition w-full">
+          Kirim
+        </button>
+      </div>
+
+    </form>
+  </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="bg-[#17B8A6] text-white">
+  <div class="border-t border-[#139e90] mt-6 py-4 text-center text-sm">
+    &copy; 2024 Geofanny Alfareza Pratama. All rights reserved.
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const closeBtn = document.getElementById('close-btn');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.remove('hidden');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden');
+  });
+</script>
+
+</body>
+</html>

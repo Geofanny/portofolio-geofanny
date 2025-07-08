@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Detail Project</title>
+</head>
+<body>
+    <header class="relative text-black shadow-md overflow-hidden">
+        <!-- Navbar -->
+        <nav class="relative z-10 w-full ">
+          <div class="max-w-7xl mx-auto px-6 md:px-10 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-black">Portofolio</div>
+      
+              <!-- Menu Desktop -->
+              <div class="space-x-6 hidden md:flex items-center">
+                <a href="../index.html" class="text-black hover:text-blue-600">Home</a>
+                <a href="../index.html" class="text-black hover:text-blue-600">About</a>
+                <a href="../index.html" class="text-black hover:text-blue-600">Projects</a>
+                <a href="../index.html" class="text-white bg-[#17B8A6] hover:bg-[#139e90] px-4 py-1.5 rounded-lg shadow-md">
+                  Contact
+                </a>
+              </div>
+      
+              <!-- Hamburger Menu -->
+              <div class="md:hidden">
+                <button id="menu-btn" class="focus:outline-none">
+                  <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h16"/>
+                  </svg>
+                </button>
+              </div>
+          </div>
+        </nav>
+        <!-- Sidebar Mobile Menu -->
+        <div id="mobile-menu" class="fixed inset-0 bg-black bg-opacity-50 hidden z-30">
+          <div class="w-64 bg-white h-full p-6 shadow-lg flex flex-col space-y-6">
+            <div class="flex justify-between items-center mb-4">
+              <span class="text-2xl font-bold text-black">Menu</span>
+              <button id="close-btn" class="focus:outline-none">
+                <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+              </button>
+            </div>
+            <a href="../index.html" class="text-black hover:text-blue-600">Home</a>
+            <a href="../index.html" class="text-black hover:text-blue-600">About</a>
+            <a href="../index.html" class="text-black hover:text-blue-600">Projects</a>
+            <a href="../index.html" class="text-white bg-[#17B8A6] hover:bg-[#139e90] px-4 py-2 rounded-lg shadow-md w-fit">Contact</a>
+          </div>
+        </div>
+    </header>
+
+    <main class="mx-auto px-6 md:px-10 mt-10 mb-20">
+
+        <!-- Judul Project -->
+        <h1 class="text-4xl md:text-4xl font-bold text-left text-[#17B8A6] mb-8">
+          UI/UX Landing Page LibraSmart
+        </h1>
+      
+        <!-- Swiper untuk Gambar -->
+        <div class="swiper mySwiper w-full rounded-xl overflow-hidden shadow-lg mb-8">
+          <div class="swiper-wrapper">
+        
+            <div class="swiper-slide">
+              <img src="../img/homepage-librasmart.png" alt="Project Image 1" class="w-full h-[500px] object-cover">
+            </div>
+        
+            <div class="swiper-slide">
+              <img src="../img/login-librasmart.png" alt="Project Image 2" class="w-full h-[500px] object-cover">
+            </div>
+        
+            <div class="swiper-slide">
+              <img src="../img/daftar-librasmart.png" alt="Project Image 3" class="w-full h-[500px] object-cover">
+            </div>
+        
+          </div>
+        
+          <!-- Navigasi panah -->
+          <div class="swiper-button-next text-[#17B8A6]"></div>
+          <div class="swiper-button-prev text-[#17B8A6]"></div>
+        
+          <!-- Pagination titik-titik -->
+          <div class="swiper-pagination"></div>
+        </div>
+      
+        <!-- Deskripsi Project -->
+        <div class="text-gray-700 text-lg space-y-8 leading-relaxed">
+
+          <!-- Deskripsi -->
+          <div>
+            <h2 class="text-2xl font-bold text-[#17B8A6] mb-2">Deskripsi</h2>
+            <p>
+              Desain tampilan website LibraSmart ditujukan untuk memudahkan pengguna mengakses informasi daftar buku serta melakukan proses login dan pendaftaran akun.
+            </p>
+          </div>
+
+          <!-- Menu -->
+          <div>
+            <h2 class="text-2xl font-bold text-[#17B8A6] mb-2">Fitur</h2>
+            <ul class="list-disc list-inside space-y-2">
+              <li>Halaman Utama LibraSmart</li>
+              <li>Login LibraSmart</li>
+              <li>Daftar Akun LibraSmart</li>
+            </ul>
+          </div>
+
+          <!-- Source Code -->
+          <div>
+            <h2 class="text-2xl font-bold text-[#17B8A6] mb-2">Preview</h2>
+            <a href="https://www.figma.com/proto/7PLZLQMuBYpTC7qWMYUTul/Untitled?t=n5RRjYO9efD49BL0-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&node-id=19-776&starting-point-node-id=1%3A2" target="_blank" class="text-black hover:underline">
+              <u>Preview</u>
+            </a>
+          </div>
+
+        </div>
+
+      
+      </main>
+      
+    
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeBtn = document.getElementById('close-btn');
+      
+        menuBtn.addEventListener('click', () => {
+          mobileMenu.classList.remove('hidden');
+        });
+      
+        closeBtn.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: {
+              delay: 3000,
+              disableOnInteraction: false,
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+        
+
+</body>
+</html>
