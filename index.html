@@ -66,14 +66,14 @@
 
     <!-- Kolom Kiri (Teks) -->
     <div class="text-left space-y-6">
-      <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">
+      <!-- <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">
         Hi, Guys!
-      </h1>
-      <h2 class="text-2xl md:text-5xl font-semibold text-[#17B8A6]">
+      </h1> -->
+      <h2 class="text-2xl md:text-5xl font-semibold text-black">
         Welcome to my profile
       </h2>
       <p class="text-lg md:text-xl text-gray-700 max-w-xl">
-        Saya siap membantu mewujudkan ide kreatif menjadi website yang keren & responsif.
+        Beberapa proyek dan pengalaman saya mencerminkan ketertarikan dalam pengembangan web.
       </p>
       <div class="space-x-4">
         <a href="#projects" class="inline-block bg-[#17B8A6] hover:bg-[#139e90] text-white py-3 px-6 rounded-xl shadow-lg">
@@ -178,7 +178,7 @@
 
 </div>
 
-<h1 class="text-4xl md:text-5xl font-bold text-center text-[#17B8A6]" id="projects">
+<h1 class="text-4xl md:text-5xl font-bold text-center text-[#17B8A6]">
   Certification <span class="text-black">Me</span>
   <span class="block h-1 bg-[#17B8A6] w-64 mx-auto mt-2"></span>
 </h1>
@@ -266,53 +266,73 @@
 <!-- Card Project -->
 <div class="max-w-7xl mx-auto px-6 md:px-10 mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-12">
 
-  <!-- Card 1 -->
-  <a href="projects/skriva.html" class="relative group w-full h-48 rounded-xl overflow-hidden shadow-lg block">
-    <img src="img/img-project-1.png" alt="Website Portofolio" class="w-full h-full object-cover">
-    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-      <h3 class="text-white text-center text-lg font-semibold px-4">Website Skriva (Skripsi Virtual Assistant) Untuk Pengajuan Bimbingan Mahasiswa</h3>
+   <!-- Card 1 -->
+   <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+    <img src="img/img-project-1.png" alt="Website Skriva" class="w-full h-48 object-cover">
+    <div class="p-4">
+      <h3 class="text-lg font-semibold mb-2">Website Skriva <i>(Skripsi Virtual Assistant)</i></h3>
+      <p class="text-sm text-gray-700">
+        Sistem web untuk mempermudah mahasiswa dalam mengajukan bimbingan skripsi secara online. Dibuat dengan Laravel dan Tailwind CSS.
+      </p>
     </div>
-  </a>
+  </div>
 
   <!-- Card 2 -->
-  <a href="projects/sikarta.html" class="relative group w-full h-48 rounded-xl overflow-hidden shadow-lg block">
-    <img src="img/img-project-2.png" alt="Landing Page Produk" class="w-full h-full object-cover">
-    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-      <h3 class="text-white text-center text-lg font-semibold px-4">UI/UX Sistem Informasi Karang Taruna (SIKARTA)</h3>
+  <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+    <img src="img/img-project-2.png" alt="SIKARTA" class="w-full h-48 object-cover">
+    <div class="p-4">
+      <h3 class="text-lg font-semibold mb-2">UI/UX Sistem Informasi Karang Taruna (SIKARTA)</h3>
+      <p class="text-sm text-gray-700">
+        Desain antarmuka sistem informasi untuk pengelolaan data dan kegiatan organisasi Karang Taruna.
+      </p>
     </div>
-  </a>
+  </div>
 
-  <!-- Card 3 -->
-  <a href="projects/librasmart.html" class="relative group w-full h-48 rounded-xl overflow-hidden shadow-lg block">
-    <img src="img/img_project_3.PNG" alt="Sistem Informasi Kampus" class="w-full h-full object-cover">
-    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-      <h3 class="text-white text-center text-lg font-semibold px-4">UI/UX Landing Page LibraSmart</h3>
+    <!-- Card 6 -->
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+      <img src="img/img-project-6.PNG" alt="E-commerce" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold mb-2">Website E-commerce Sederhana</h3>
+        <p class="text-sm text-gray-700">
+          Website toko online dengan fitur katalog, keranjang, pemesanan, dan panel admin untuk pengelolaan produk.
+        </p>
+      </div>
     </div>
-  </a>
+
+      <!-- Card 5 -->
+  <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+    <img src="img/bubro.PNG" alt="Pendataan Siswa" class="w-full h-48 object-cover">
+    <div class="p-4">
+      <h3 class="text-lg font-semibold mb-2">Sistem Web API Laravel untuk Manajemen Data Sederhana</h3>
+      <p class="text-sm text-gray-700">
+        Web API Laravel dengan Sanctum untuk autentikasi, dilengkapi endpoint produk, galeri, event, dan fitur login/logout.
+      </p>
+    </div>
+  </div>
+
+
 
   <!-- Card 4 -->
-  <a href="projects/pemesananPaketWisata.html" class="relative group w-full h-48 rounded-xl overflow-hidden shadow-lg block">
-    <img src="img/img-project-4.PNG" alt="Website Portofolio" class="w-full h-full object-cover">
-    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-      <h3 class="text-white text-center text-lg font-semibold px-4">Website Pemesanan Paket Wisata Taman Safari Bogor Sederhana</h3>
+  <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+    <img src="img/img-project-4.PNG" alt="Paket Wisata" class="w-full h-48 object-cover">
+    <div class="p-4">
+      <h3 class="text-lg font-semibold mb-2">Website Pemesanan Paket Wisata</h3>
+      <p class="text-sm text-gray-700">
+        Website sederhana untuk pemesanan paket wisata Taman Safari Bogor. Menyediakan info harga dan pemesanan online.
+      </p>
     </div>
-  </a>
-  
-  <!-- Card 5 -->
-  <a href="projects/pendataanSiswa.html" class="relative group w-full h-48 rounded-xl overflow-hidden shadow-lg block">
-    <img src="img/img_project_5.PNG" alt="Landing Page Produk" class="w-full h-full object-cover">
-    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-      <h3 class="text-white text-center text-lg font-semibold px-4">Website Sistem Informasi Pendataan Siswa-Siswi Sekolah</h3>
+  </div>
+
+    <!-- Card 3 -->
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+      <img src="img/img_project_5.PNG" alt="LibraSmart" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold mb-2">Sistem Pendataan Siswa</h3>
+        <p class="text-sm text-gray-700">
+          Aplikasi web sederhana untuk mencatat dan mengelola data siswa dan kelas. Dibuat untuk latihan pengembangan web.
+        </p>
+      </div>
     </div>
-  </a>
-  
-  <!-- Card 6 -->
-  <a href="projects/ecommerce.html" class="relative group w-full h-48 rounded-xl overflow-hidden shadow-lg block">
-    <img src="img/img-project-6.PNG" alt="Sistem Informasi Kampus" class="w-full h-full object-cover">
-    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-      <h3 class="text-white text-center text-lg font-semibold px-4">Website E-commerce Sederhana</h3>
-    </div>
-  </a>
 
 </div>
 
